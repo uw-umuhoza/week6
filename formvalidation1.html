@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<title>form validation</title>
+ 		<link rel="stylesheet" type="text/css" href="formvalidation1.css">
+ 	<script type="text/javascript"src="formvalidation1.js">
+ 	//alert("test");
+ </script>
+ 
+ 	
+ </head>
+ <body>
+ <form action="">
+ 	<div id="fullpage">
+ 		<h1>make an order:</h1>
+<table border="0">
+	<tr>
+		<td class="label_col">firstname:</td>
+		<td class="input_col"> <input type="text" name="firstname" id="firstname" onblur="validatefirstname();"></td>
+		<td class="feedback_col"><span id="firstnameprompt">&nbsp;</span>
+	</tr>
+	<tr> 
+		<td class="label_col">lastname:</td>
+		<td class="input_col"><input type="text" name="lastname" id="lastname" onblur="validatelastname();"></td>
+		<td class="feedback_col"><span id="lastnameprompt">&nbsp;</span>
+	</tr>  
+	<tr>
+		<td class="label_col">phone number:</td>
+		<td class="input_col"><input type="text" name="phone" id="phone" onblur="validatephone()";placeholder="xxx-xxx-xxxx"></td>
+		<td class="feedback_col"><span id="phoneprompt">xxx-xxx-xxx-xxxx </span> </td> 
+	</tr>
+	<tr>
+		<td class="label_col">order quantity:</td>
+		<td class="input_col"><input type="number" name="quantity" id="quantity"></td>
+		<td class="feedback_col"><span id="quantityprompt">1&ndash ;55</span>
+	</tr>
+	<tr>
+		<td class="label_col">item price:</td>
+		<td class="input_col"><input type="text" name="item price" id="price"value="10.00" readonly ></td>
+		<td class="feedback_col">USD</td>
+	</tr> 
+	<!--<tr>
+		<td><input type="submit"value="submit"/></td>
+	</tr>
+	-->
+	<tr>
+		<td class="Button" id="Button"colspan="3"><span class="buttonBG" onclick="calcOrder();">order now</span></td>
+	</tr>
+	
+</table> 
+
+<span id="ordercomfirm">&nbsp;</span>
+
+ 	</div>
+ 	
+ </form>
+ <div id="formelements"></div>
+ </body>
+ </html> 
